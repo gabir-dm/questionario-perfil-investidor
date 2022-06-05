@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">perfil-investidor</string>
+    <string name="app_name">Quiz Perfil de Investidor</string>
+
+<!-- Main Activity -->
+
+    <string name="main_title">Descubra seu Perfil de Investidor</string>
+    <string name="main_name_hint">Digite seu nome</string>
+    <string name="main_start_btn">Iniciar Questionário</string>
+    <string name="main_disclaimer">A metodologia utilizada neste teste foi adaptada do questionário criado pelo Banco Paulista, acessível pelo endereço https://www.bancopaulista.com.br/Arquivos/QuestionarioAPI.pdf</string>
 </resources>
