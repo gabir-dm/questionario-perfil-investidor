@@ -19,8 +19,8 @@ class Q10 : Fragment() {
         val btnQ10 = view.findViewById<Button>(R.id.btn_q10)
         btnQ10.setOnClickListener {
 
-//            val navController = findNavController()
-//            navController.navigate(R.id.action_q2_to_q3)
+            val navController = findNavController()
+            navController.navigate(R.id.action_q10_to_resultActivity)
 
         }
 

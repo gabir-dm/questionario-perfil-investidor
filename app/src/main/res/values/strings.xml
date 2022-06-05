@@ -75,9 +75,5 @@
     <!-- Result Activity -->
     <string name="result_name">Nome</string>
     <string name="result_txt">Seu perfil de investidor é:</string>
-    <string name="result_r1">Conservador</string>
-    <string name="result_r2">Moderado</string>
-    <string name="result_r3">Arrojado</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result_final">Perfil</string>
 </resources>
