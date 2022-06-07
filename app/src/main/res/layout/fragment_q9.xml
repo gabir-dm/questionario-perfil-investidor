@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout9"
+    android:id="@+id/frameLayout10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Q9" >
+    tools:context=".Q9">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,6 +66,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/quiz_q9_a4"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q9_a5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_q9_a5"
                 android:textSize="16sp" />
         </RadioGroup>
 
@@ -75,6 +83,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
             android:backgroundTint="#373533"
-            android:text="@string/quiz_next_btn" />
+            android:text="@string/quiz_finish_btn" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -68,6 +68,20 @@
             app:destination="@id/q8" />
     </fragment>
     <fragment
+        android:id="@+id/q9"
+        android:name="com.example.perfil_investidor.Q9"
+        android:label="fragment_q9"
+        tools:layout="@layout/fragment_q9">
+        <action
+            android:id="@+id/action_q9_to_resultActivity"
+            app:destination="@id/resultActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/resultActivity"
+        android:name="com.example.perfil_investidor.ResultActivity"
+        android:label="activity_result"
+        tools:layout="@layout/activity_result" />
+    <fragment
         android:id="@+id/q8"
         android:name="com.example.perfil_investidor.Q8"
         android:label="fragment_q8"
@@ -76,27 +90,4 @@
             android:id="@+id/action_q8_to_q9"
             app:destination="@id/q9" />
     </fragment>
-    <fragment
-        android:id="@+id/q9"
-        android:name="com.example.perfil_investidor.Q9"
-        android:label="fragment_q9"
-        tools:layout="@layout/fragment_q9" >
-        <action
-            android:id="@+id/action_q9_to_q10"
-            app:destination="@id/q10" />
-    </fragment>
-    <fragment
-        android:id="@+id/q10"
-        android:name="com.example.perfil_investidor.Q10"
-        android:label="fragment_q10"
-        tools:layout="@layout/fragment_q10" >
-        <action
-            android:id="@+id/action_q10_to_resultActivity"
-            app:destination="@id/resultActivity" />
-    </fragment>
-    <activity
-        android:id="@+id/resultActivity"
-        android:name="com.example.perfil_investidor.ResultActivity"
-        android:label="activity_result"
-        tools:layout="@layout/activity_result" />
 </navigation>

@@ -20,7 +20,7 @@ class Q9 : Fragment() {
         btnQ9.setOnClickListener {
 
             val navController = findNavController()
-            navController.navigate(R.id.action_q9_to_q10)
+            navController.navigate(R.id.action_q9_to_resultActivity)
 
         }
 
