@@ -6,23 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.perfil_investidor.model.QuizViewModel
 
 class Q9 : Fragment() {
+
+    private val sharedViewModel : QuizViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_q9, container, false)
-
-        val btnQ9 = view.findViewById<Button>(R.id.btn_q9)
-        btnQ9.setOnClickListener {
-
-            val navController = findNavController()
-            navController.navigate(R.id.action_q9_to_resultActivity)
-
-        }
 
         return view
     }

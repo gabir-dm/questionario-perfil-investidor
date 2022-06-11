@@ -7,9 +7,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 
-
-const val EXTRA_NAME = "com.example.perfil_investidor.MESSAGE"
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         if(name != "") {
             val intent = Intent(this, QuizActivity::class.java).apply {
-                putExtra(EXTRA_NAME, name)
+                putExtra("name", name)
             }
             startActivity(intent)
         } else {
