@@ -5,29 +5,38 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.perfil_investidor.databinding.FragmentQ2Binding
 import com.example.perfil_investidor.model.QuizViewModel
 
 class Q2 : Fragment() {
 
+    private var binding : FragmentQ2Binding? = null
     private val sharedViewModel : QuizViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_q2, container, false)
+        val fragmentBinding = FragmentQ2Binding.inflate(inflater, container, false)
+        binding = fragmentBinding
+        return fragmentBinding.root
+    }
 
-        val btnQ2 = view.findViewById<Button>(R.id.btn_q2)
-        btnQ2.setOnClickListener {
+    fun nextQuestion() {
+        findNavController().navigate(R.id.action_q2_to_q3)
+    }
 
-            val navController = findNavController()
-            navController.navigate(R.id.action_q2_to_q3)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        binding?.apply {
+            lifecycleOwner = viewLifecycleOwner
+            viewModel = sharedViewModel
+            q2 = this@Q2
         }
 
-        return view
     }
+
 }

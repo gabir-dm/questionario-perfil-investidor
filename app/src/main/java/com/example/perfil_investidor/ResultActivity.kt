@@ -3,6 +3,7 @@ package com.example.perfil_investidor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import org.w3c.dom.Text
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,8 +12,11 @@ class ResultActivity : AppCompatActivity() {
 
         val name = intent.getStringExtra("username")
         val userName = findViewById<TextView>(R.id.txt_name)
-
         userName.text = name
+
+        val profile = intent.getStringExtra("userprofile")
+        val userProfile = findViewById<TextView>(R.id.txt_finalResult)
+        userProfile.text = profile
 
     }
 }

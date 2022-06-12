@@ -67,7 +67,8 @@
 
 
     <!-- Result Activity -->
-    <string name="result_name">Nome</string>
     <string name="result_txt">Seu perfil de investidor é:</string>
-    <string name="result_final">Perfil</string>
+    <string name="result_profile1">Conservador</string>
+    <string name="result_profile2">Moderado</string>
+    <string name="result_profile3">Arrojado</string>
 </resources>
